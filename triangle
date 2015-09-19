@@ -45,7 +45,7 @@ public class Triangle {
 	        String[] triangleLengthArr = s[0].split(",");
 	        
 	        if(triangleLengthArr.length<3 || triangleLengthArr.length>3){
-    			System.out.println("Please enter 3 values to form a triangle. You've entered "+triangleLengthArr.length+" values.");
+    			System.out.println("Please enter 3 values to form a triangle. You've entered "+triangleLengthArr.length+" value(s).");
     			return;
     		}
 	        
