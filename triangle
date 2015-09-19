@@ -45,7 +45,7 @@ public class Triangle {
 	        String[] triangleLengthArr = s[0].split(",");
 	        
 	        if(triangleLengthArr.length<3 || triangleLengthArr.length>3){
-    			System.out.println("You need to pass 3 values of sides. You've passed "+triangleLengthArr.length+" values.");
+    			System.out.println("You need to pass 3 values of sides. You've passed "+triangleLengthArr.length+" value(s).");
     			return;
     		}
 	        
