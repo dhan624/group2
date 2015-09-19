@@ -20,9 +20,9 @@ public class Triangle {
     
     private String checkForValidValues(double len1, double len2, double len3){
     	if(len1<0 || len2<0 || len3<0){
-    		return "Length of any side couldn't be negative.";
+    		return "Side length cannot be negative. Enter a positive whole number.";
     	}else if(len1==0 || len2==0 || len3==0){
-    		return "Length of any side couldn't be Zero.";
+    		return "Side length of any side cannot equal zero. Enter a positive whole number.";
     	}
     	return "";
     }
@@ -38,14 +38,14 @@ public class Triangle {
     public static void main(String[] s){
     	try{
     		if(s.length==0){
-    			System.out.println("Please pass length of all sides of a triangle.");
+    			System.out.println("Please enter 3 values to form all sides of a triangle.");
     			return;
     		}
     		
 	        String[] triangleLengthArr = s[0].split(",");
 	        
 	        if(triangleLengthArr.length<3 || triangleLengthArr.length>3){
-    			System.out.println("You need to pass 3 values of sides. You've passed "+triangleLengthArr.length+" values.");
+    			System.out.println("Please enter 3 values to form a triangle. You've entered "+triangleLengthArr.length+" values.");
     			return;
     		}
 	        
@@ -68,7 +68,7 @@ public class Triangle {
 	        }
 	        
 	        if(!object.validTriangleValues(length1, length2, length3)){
-	        	System.out.println("Values "+length1+","+length2+","+length3+" can not form a Triangle.");
+	        	System.out.println("Values "+length1+","+length2+","+length3+" cannot form a triangle.");
 	        	return;
 	        }
 	        
