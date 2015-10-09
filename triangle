@@ -11,10 +11,10 @@ public class Triangle {
     }
     
     private String checkrTriangle(double len1, double len2, double len3){
-        if(Math.pow(len1,2) + Math.pow(len2,2) == Math.pow(len3,2)){
+        if(Math.abs(len1*len1 + len2*len2 - len3*len3) < 0.1 || Math.abs(len1*len1 + len3*len3 - len2*len2) < 0.1 || Math.abs(len3*len3 + len2*len2 - len1*len1) < 0.1){
             return "Right Triangle";
         }else{
-            return "Not a right triangle";
+            return "";
         }
     }
     
